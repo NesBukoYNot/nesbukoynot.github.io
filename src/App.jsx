@@ -9,7 +9,6 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import History from './pages/History';
 import Profile from './pages/Profile';
-import './App.css';
 
 function App() {
   return (
