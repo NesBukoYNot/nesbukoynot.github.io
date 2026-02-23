@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div className="flex justify-between h-20">
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-2 group">
-                        <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain" />
+                        <img src="/logo.png" alt="Logo" width="40" height="40" className="w-10 h-10 object-contain" fetchPriority="high" decoding="sync" loading="eager" />
                         <span className="text-2xl font-black text-primary tracking-tight">NesBuko<span className="text-secondary">YNot</span></span>
                     </Link>
 
