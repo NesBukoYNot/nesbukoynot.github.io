@@ -4,10 +4,10 @@ const About = () => {
     // Member data - Group members can update their own info here
     const members = [
         {
-            name: "Stephen Dave Blanza",
+            name: "Vince Gio Acedillo",
             role: "Project Lead / Lead Developer",
             bio: "Responsible for overall project architecture and core React implementation.",
-            image: "/Dave Blanza.png",
+            image: "/Vince Acedillo.png",
             github: "#",
             linkedin: "#"
         },
@@ -20,10 +20,10 @@ const About = () => {
             linkedin: "#"
         },
         {
-            name: "Vince Gio Acedillo",
+            name: "Stephen Dave Blanza",
             role: "Content & QA Specialist",
             bio: "Managed product data and conducted cross-device testing for performance.",
-            image: "/Vince Acedillo.png",
+            image: "/Dave Blanza.png",
             github: "#",
             linkedin: "#"
         }

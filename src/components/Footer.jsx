@@ -48,6 +48,7 @@ const Footer = () => {
                             <li><Link to="/profile" className="hover:text-white transition-colors">Profile Details</Link></li>
                             <li><Link to="/login" className="hover:text-white transition-colors">Member Login</Link></li>
                             <li><Link to="/register" className="hover:text-white transition-colors">Join Community</Link></li>
+                            <li><Link to="/about" className="hover:text-white transition-colors">About Team</Link></li>
                             <li><Link to="/checkout" className="hover:text-white transition-colors">Checkout</Link></li>
                         </ul>
                     </div>
@@ -58,15 +59,18 @@ const Footer = () => {
                         <ul className="space-y-6 text-white/70">
                             <li className="flex items-start gap-3">
                                 <MapPin size={20} className="text-accent flex-shrink-0" />
-                                <span className="text-sm">FEU Tech, P. Paredes St, Sampaloc, Manila, 1015 Metro Manila</span>
+                                <span className="text-sm">P. Paredes St., Sampaloc, Manila 1015</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone size={20} className="text-accent flex-shrink-0" />
-                                <span className="text-sm">+63 (02) 1234 5678</span>
+                                <span className="text-sm">(02) 8281 8888</span>
                             </li>
-                            <li className="flex items-center gap-3">
+                            <li className="flex items-start gap-3">
                                 <Mail size={20} className="text-accent flex-shrink-0" />
-                                <span className="text-sm">contact@nesbukoynot.com</span>
+                                <div className="flex flex-col text-sm">
+                                    <span>info@feutech.edu.ph</span>
+                                    <span>ccs_it@feutech.edu.ph</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
