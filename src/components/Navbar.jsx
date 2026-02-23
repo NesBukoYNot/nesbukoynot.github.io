@@ -24,9 +24,7 @@ const Navbar = () => {
                 <div className="flex justify-between h-20">
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-2 group">
-                        <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white transition-transform group-hover:rotate-12">
-                            <Leaf size={24} fill="currentColor" />
-                        </div>
+                        <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain" />
                         <span className="text-2xl font-black text-primary tracking-tight">NesBuko<span className="text-secondary">YNot</span></span>
                     </Link>
 
