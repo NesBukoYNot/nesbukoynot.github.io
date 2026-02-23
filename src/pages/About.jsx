@@ -5,24 +5,24 @@ const About = () => {
     const members = [
         {
             name: "Vince Gio Acedillo",
-            role: "Project Lead / Lead Developer",
-            bio: "Responsible for overall project architecture and core React implementation.",
+            role: "Team Leader",
+            bio: "Collaborated on the overall project vision, site layout, and core component integration.",
             image: "/Vince Acedillo.png",
             github: "#",
             linkedin: "#"
         },
         {
             name: "Jandrei Labarento",
-            role: "UI/UX Designer",
-            bio: "Focused on the premium earthy aesthetic and Tailwind CSS design system.",
+            role: "Team Member",
+            bio: "Contributed to the visual design, branding elements, user interface styling and programming also.",
             image: "/Jandrei Labarento.png",
             github: "#",
             linkedin: "#"
         },
         {
             name: "Stephen Dave Blanza",
-            role: "Content & QA Specialist",
-            bio: "Managed product data and conducted cross-device testing for performance.",
+            role: "Team Member",
+            bio: "Assisted in content management, product research, quality assurance testing and programming also.",
             image: "/Dave Blanza.png",
             github: "#",
             linkedin: "#"
