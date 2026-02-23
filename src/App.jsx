@@ -9,6 +9,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import History from './pages/History';
 import Profile from './pages/Profile';
+import About from './pages/About';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/history" element={<History />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Layout>
     </Router>

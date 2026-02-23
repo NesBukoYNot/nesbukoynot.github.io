@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ShoppingCart, User, History, Home, Package, LogIn, LayoutDashboard, Menu, X, Leaf } from 'lucide-react';
+import { ShoppingCart, User, History, Home, Package, LogIn, LayoutDashboard, Menu, X, Leaf, Info } from 'lucide-react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +13,7 @@ const Navbar = () => {
         { path: '/cart', label: 'Cart', icon: <ShoppingCart size={18} /> },
         { path: '/history', label: 'History', icon: <History size={18} /> },
         { path: '/profile', label: 'Profile', icon: <User size={18} /> },
+        { path: '/about', label: 'About', icon: <Info size={18} /> },
     ];
 
     const isActive = (path) => location.pathname === path;
@@ -36,8 +37,8 @@ const Navbar = () => {
                                 key={link.path}
                                 to={link.path}
                                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all ${isActive(link.path)
-                                        ? 'bg-primary/10 text-primary'
-                                        : 'text-gray-500 hover:bg-gray-50 hover:text-primary'
+                                    ? 'bg-primary/10 text-primary'
+                                    : 'text-gray-500 hover:bg-gray-50 hover:text-primary'
                                     }`}
                             >
                                 {link.icon}
@@ -77,8 +78,8 @@ const Navbar = () => {
                             to={link.path}
                             onClick={() => setIsOpen(false)}
                             className={`flex items-center gap-4 px-4 py-4 rounded-2xl text-base font-bold transition-all ${isActive(link.path)
-                                    ? 'bg-primary text-white shadow-lg shadow-primary/20'
-                                    : 'text-gray-600 hover:bg-gray-50'
+                                ? 'bg-primary text-white shadow-lg shadow-primary/20'
+                                : 'text-gray-600 hover:bg-gray-50'
                                 }`}
                         >
                             {link.icon}
