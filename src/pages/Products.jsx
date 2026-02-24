@@ -36,8 +36,8 @@ const Products = () => {
                             key={cat}
                             onClick={() => setFilter(cat)}
                             className={`px-6 py-3 rounded-2xl text-xs font-black tracking-widest uppercase transition-all ${filter === cat
-                                    ? 'bg-primary text-white shadow-xl shadow-primary/30 scale-105'
-                                    : 'bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-600'
+                                ? 'bg-primary text-white shadow-xl shadow-primary/30 scale-105'
+                                : 'bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-600'
                                 }`}
                         >
                             {cat}
@@ -45,17 +45,17 @@ const Products = () => {
                     ))}
                 </div>
 
-                <div className="flex items-center gap-4 w-full lg:w-96">
+                <div className="flex items-center gap-4 w-full lg:w-[28rem]">
                     <div className="relative flex-1 group">
-                        <span className="absolute inset-y-0 left-0 pl-14 flex items-center text-gray-300 group-focus-within:text-primary transition-colors">
-                            <Search size={20} />
+                        <span className="absolute inset-y-0 left-0 pl-5 flex items-center text-gray-400 group-focus-within:text-primary transition-all duration-500 pointer-events-none">
+                            <Search className="w-5 h-5 group-focus-within:scale-110 group-focus-within:rotate-6" />
                         </span>
                         <input
                             type="text"
-                            placeholder="Search our catalog..."
+                            placeholder="What sustainable materials are you looking for?"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full pl-14 pr-6 py-4 rounded-2xl bg-gray-50 border-none outline-none ring-2 ring-transparent focus:ring-primary/10 transition-all font-bold text-gray-700 placeholder:text-gray-300"
+                            className="w-full pl-14 pr-6 py-4 rounded-[1.5rem] bg-gray-50/50 border-2 border-transparent outline-none ring-0 focus:bg-white focus:border-primary/20 focus:ring-4 focus:ring-primary/10 transition-all duration-500 font-bold text-gray-700 placeholder:text-gray-400 placeholder:font-medium shadow-[0_0_0_0_rgba(0,0,0,0)] hover:shadow-lg focus:shadow-xl hover:bg-white group-hover:border-gray-100"
                         />
                     </div>
                 </div>
