@@ -22,13 +22,11 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20">
-                    {/* Logo */}
                     <Link to="/" className="flex items-center gap-2 group">
                         <img src="/logo.png" alt="Logo" width="40" height="40" className="w-10 h-10 object-contain" fetchPriority="high" decoding="sync" loading="eager" />
                         <span className="text-2xl font-black text-primary tracking-tight">NesBuko<span className="text-secondary">YNot</span></span>
                     </Link>
 
-                    {/* Desktop Navigation */}
                     <div className="hidden lg:flex items-center gap-1">
                         {navLinks.map((link) => (
                             <Link
@@ -61,7 +59,6 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    {/* Mobile Menu Button */}
                     <div className="lg:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
@@ -73,7 +70,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Navigation */}
             <div className={`lg:hidden transition-all duration-300 ease-in-out border-b border-gray-100 bg-white overflow-hidden ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                 }`}>
                 <div className="px-4 pt-2 pb-6 space-y-2">

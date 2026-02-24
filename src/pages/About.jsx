@@ -46,7 +46,7 @@ const About = () => {
                 {members.map((member, index) => (
                     <div key={index} className="group bg-white rounded-[2.5rem] p-8 shadow-xl shadow-gray-100/50 border border-gray-50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 text-center">
                         <div className="relative w-32 h-32 mx-auto mb-6">
-                            <div className="w-full h-full rounded-[2rem] bg-gray-100 flex items-center justify-center overflow-hidden border-4 border-white shadow-lg overflow-hidden group-hover:border-primary/20 transition-colors">
+                            <div className="w-full h-full rounded-[2rem] bg-gray-100 flex items-center justify-center overflow-hidden border-4 border-white shadow-lg group-hover:border-primary/20 transition-colors">
                                 {member.image ? (
                                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                                 ) : (

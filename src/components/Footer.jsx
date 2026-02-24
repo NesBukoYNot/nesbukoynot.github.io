@@ -6,7 +6,6 @@ const Footer = () => {
         <footer className="bg-primary text-white pt-20 pb-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                    {/* Brand Section */}
                     <div className="space-y-6">
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20">
@@ -30,7 +29,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Quick Links */}
                     <div>
                         <h4 className="text-lg font-bold mb-8 text-accent">Shop Catalog</h4>
                         <ul className="space-y-4 text-white/70">
@@ -41,7 +39,6 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Account */}
                     <div>
                         <h4 className="text-lg font-bold mb-8 text-accent">My Account</h4>
                         <ul className="space-y-4 text-white/70">
@@ -53,7 +50,6 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Contact Info */}
                     <div>
                         <h4 className="text-lg font-bold mb-8 text-accent">Get In Touch</h4>
                         <ul className="space-y-6 text-white/70">
@@ -76,7 +72,6 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Bottom Bar with Mandatory Disclaimer */}
                 <div className="pt-8 border-t border-white/10 text-center">
                     <p className="text-accent/60 italic text-sm mb-4 max-w-2xl mx-auto">
                         "For educational purposes only, and no copyright infringement is intended."
