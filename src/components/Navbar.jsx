@@ -43,13 +43,20 @@ const Navbar = () => {
                                 {link.label}
                             </Link>
                         ))}
-                        <div className="ml-4 pl-4 border-l border-gray-100">
-                            <Link
-                                to="/login"
-                                className="flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-xl font-bold transition-all hover:bg-primary-hover hover:shadow-lg hover:shadow-primary/20 active:scale-95"
+                        <div className="ml-4 pl-4 border-l border-gray-100 flex items-center gap-3">
+                            <Link 
+                                to="/login" 
+                                className="flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-gray-500 hover:bg-gray-50 hover:text-primary transition-all"
                             >
                                 <LogIn size={18} />
-                                Login
+                                Log In
+                            </Link>
+                            <Link
+                                to="/register"
+                                className="flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-xl font-bold transition-all hover:bg-primary-hover hover:shadow-lg hover:shadow-primary/20 active:scale-95"
+                            >
+                                <User size={18} />
+                                Register
                             </Link>
                         </div>
                     </div>
@@ -84,14 +91,22 @@ const Navbar = () => {
                             {link.label}
                         </Link>
                     ))}
-                    <div className="pt-4 border-t border-gray-100">
+                    <div className="pt-4 border-t border-gray-100 space-y-3">
                         <Link
                             to="/login"
                             onClick={() => setIsOpen(false)}
-                            className="flex items-center justify-center gap-3 w-full bg-primary text-white py-4 rounded-2xl font-bold shadow-lg shadow-primary/20"
+                            className="flex items-center justify-center gap-3 w-full bg-gray-50 text-gray-600 py-4 rounded-2xl font-bold hover:bg-gray-100"
                         >
                             <LogIn size={20} />
-                            Sign In to Account
+                            Log In
+                        </Link>
+                        <Link
+                            to="/register"
+                            onClick={() => setIsOpen(false)}
+                            className="flex items-center justify-center gap-3 w-full bg-primary text-white py-4 rounded-2xl font-bold shadow-lg shadow-primary/20"
+                        >
+                            <User size={20} />
+                            Register
                         </Link>
                     </div>
                 </div>
