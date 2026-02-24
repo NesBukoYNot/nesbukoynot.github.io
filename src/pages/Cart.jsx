@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 
 const Cart = () => {
-    // Dummy cart items (using first 2 products)
     const cartItems = [
         { ...products[0], quantity: 2 },
         { ...products[2], quantity: 1 }
@@ -21,7 +20,6 @@ const Cart = () => {
             </header>
 
             <div className="grid lg:grid-cols-3 gap-12 mt-12">
-                {/* Cart Items List */}
                 <div className="lg:col-span-2 space-y-6">
                     {cartItems.map((item) => (
                         <div key={item.id} className="flex flex-col sm:flex-row items-center bg-white p-6 rounded-3xl border border-gray-50 shadow-sm gap-6 hover:shadow-md transition-shadow">
@@ -57,7 +55,6 @@ const Cart = () => {
                     </div>
                 </div>
 
-                {/* Summary Sidebar */}
                 <div className="lg:col-span-1">
                     <div className="card shadow-lg border border-gray-100 sticky top-28">
                         <h2 className="text-xl font-bold mb-6">Order Summary</h2>

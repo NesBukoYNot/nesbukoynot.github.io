@@ -31,7 +31,6 @@ const Checkout = () => {
             </header>
 
             <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                {/* Method selection */}
                 <div className="space-y-10">
                     <section>
                         <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
@@ -85,7 +84,6 @@ const Checkout = () => {
                     </section>
                 </div>
 
-                {/* Final Confirmation Sidebar */}
                 <div className="lg:col-span-1">
                     <div className="card shadow-2xl border border-gray-100">
                         <h2 className="text-xl font-bold mb-8">Confirm Details</h2>
