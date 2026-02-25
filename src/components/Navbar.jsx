@@ -7,14 +7,17 @@ const Navbar = () => {
     const location = useLocation();
 
     useEffect(() => {
-        const link = document.querySelector("link[rel~='icon']");
-        if (!link) {
+        const links = document.querySelectorAll("link[rel*='icon']");
+        if (links.length > 0) {
+            links.forEach(link => {
+                link.href = '/logo.png';
+                link.removeAttribute('type');
+            });
+        } else {
             const newLink = document.createElement('link');
             newLink.rel = 'icon';
             newLink.href = '/logo.png';
             document.head.appendChild(newLink);
-        } else {
-            link.href = '/logo.png';
         }
     }, []);
 
