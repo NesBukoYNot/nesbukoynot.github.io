@@ -1,10 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ShoppingCart, User, History, Home, Package, LogIn, LayoutDashboard, Menu, X, Leaf, Info } from 'lucide-react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
+
+    useEffect(() => {
+        const link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            const newLink = document.createElement('link');
+            newLink.rel = 'icon';
+            newLink.href = '/logo.png';
+            document.head.appendChild(newLink);
+        } else {
+            link.href = '/logo.png';
+        }
+    }, []);
 
     const navLinks = [
         { path: '/', label: 'Home', icon: <Home size={18} /> },
