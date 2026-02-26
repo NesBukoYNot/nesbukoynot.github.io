@@ -4,33 +4,30 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div className="page-container">
-            {/* Hero Section */}
-            <section className="relative overflow-hidden rounded-[2rem] bg-primary text-white p-8 md:p-16 mb-20 shadow-2xl min-h-[500px] flex items-center">
+            <section className="relative overflow-hidden rounded-[2rem] bg-primary text-white px-6 py-16 md:p-16 mb-12 md:mb-20 shadow-2xl min-h-[500px] flex items-center">
                 <div className="relative z-10 max-w-3xl text-left">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-accent text-xs font-bold mb-8 backdrop-blur-md border border-white/10 uppercase tracking-[0.2em]">
                         <Recycle size={14} /> Eco-Conscious Innovation
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight">
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight">
                         Revolutionizing <span className="text-accent italic">Nature</span> with Coconut Coir
                     </h1>
-                    <p className="text-lg md:text-xl opacity-80 mb-12 leading-relaxed font-light max-w-2xl">
+                    <p className="text-base md:text-lg opacity-80 mb-10 leading-relaxed font-light max-w-2xl">
                         Discover the limitless potential of coconut husk fiber. We transform recycled organic waste into premium eco-friendly solutions for sustainable living and industry.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-5">
-                        <Link to="/products" className="group flex items-center justify-center gap-3 bg-accent text-primary px-10 py-5 rounded-2xl font-black text-lg transition-all hover:scale-105 hover:bg-white active:scale-95 shadow-xl shadow-black/20">
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
+                        <Link to="/products" className="group flex items-center justify-center gap-3 bg-accent text-primary px-8 py-4 md:px-10 md:py-5 rounded-2xl font-black text-lg transition-all hover:scale-105 hover:bg-white active:scale-95 shadow-xl shadow-black/20">
                             Explore Catalog <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
                         </Link>
-                        <Link to="/storefront" className="flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 border border-white/20 backdrop-blur-sm px-10 py-5 rounded-2xl font-bold transition-all active:scale-95">
+                        <Link to="/storefront" className="flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 border border-white/20 backdrop-blur-sm px-8 py-4 md:px-10 md:py-5 rounded-2xl font-bold transition-all active:scale-95">
                             Featured Products
                         </Link>
                     </div>
                 </div>
 
-                {/* Decorative Background Elements */}
                 <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="absolute bottom-[-20%] left-[-5%] w-[300px] h-[300px] bg-secondary/20 rounded-full blur-[80px] pointer-events-none"></div>
 
-                {/* Abstract Line Art */}
                 <div className="absolute right-0 bottom-0 top-0 w-1/2 opacity-10 pointer-events-none hidden lg:block">
                     <svg viewBox="0 0 500 500" className="w-full h-full stroke-white fill-none stroke-[0.5]">
                         <path d="M500,500 C400,450 350,300 450,150 C550,0 300,50 150,100 C0,150 50,400 500,500" />
@@ -39,7 +36,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Stats / Impact Section */}
             <section className="mb-24 grid grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                     { label: "Waste Diverted", val: "50+ Tons", icon: <Recycle className="text-primary" /> },
@@ -57,7 +53,6 @@ const Home = () => {
                 ))}
             </section>
 
-            {/* Why Choose Coir? - Features */}
             <section className="mb-24">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="text-4xl font-black text-primary mb-6 tracking-tight">The Power of Natural Fiber</h2>
@@ -100,7 +95,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Mission Section */}
             <section className="bg-accent/30 rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden">
                 <div className="relative z-10 max-w-4xl mx-auto">
                     <h2 className="text-4xl font-black text-primary mb-8 tracking-tight">Built for Excellence & Sustainability</h2>
@@ -124,7 +118,6 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Background Text Deco */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-black/[0.02] whitespace-nowrap pointer-events-none select-none">
                     NESBUKOYNOT 2026
                 </div>
