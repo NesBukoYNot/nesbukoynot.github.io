@@ -1,7 +1,6 @@
 import { History, Receipt, ChevronRight, CheckCircle, Package } from 'lucide-react';
 
 const TransactionHistory = () => {
-    // Dummy transaction data
     const historyList = [
         {
             id: "TRX-99812",

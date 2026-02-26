@@ -15,7 +15,6 @@ const Login = () => {
 
                 <div className="bg-white rounded-[2.5rem] p-10 md:p-12 shadow-2xl shadow-gray-200/50 border border-gray-50">
                     <form className="space-y-8">
-                        {/* Email Address */}
                         <div>
                             <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Email Address</label>
                             <div className="relative group">
@@ -31,7 +30,6 @@ const Login = () => {
                             </div>
                         </div>
 
-                        {/* Password */}
                         <div>
                             <div className="flex justify-between items-center mb-3 ml-1">
                                 <label className="text-xs font-black text-gray-400 uppercase tracking-widest">Password</label>

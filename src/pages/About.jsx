@@ -1,7 +1,6 @@
 import { Github, Linkedin, Mail, User } from 'lucide-react';
 
 const About = () => {
-    // Member data - Group members can update their own info here
     const members = [
         {
             name: "Vince Gio Acedillo",
@@ -76,7 +75,6 @@ const About = () => {
                 ))}
             </div>
 
-            {/* Project Info Section */}
             <section className="mt-24 bg-accent/30 rounded-[3rem] p-10 md:p-16 text-center max-w-5xl mx-auto">
                 <h2 className="text-3xl font-black text-primary mb-6">About the Project</h2>
                 <div className="grid md:grid-cols-2 gap-12 text-left">

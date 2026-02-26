@@ -16,7 +16,6 @@ const Register = () => {
                 <div className="bg-white rounded-[3rem] p-8 md:p-12 shadow-2xl shadow-gray-200/50 border border-gray-50">
                     <form className="space-y-8">
                         <div className="grid md:grid-cols-2 gap-8">
-                            {/* Full Name */}
                             <div className="group">
                                 <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Complete Name</label>
                                 <div className="relative">
@@ -32,7 +31,6 @@ const Register = () => {
                                 </div>
                             </div>
 
-                            {/* Mobile Number */}
                             <div className="group">
                                 <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Mobile Number</label>
                                 <div className="relative">
@@ -49,7 +47,6 @@ const Register = () => {
                             </div>
                         </div>
 
-                        {/* Email Address */}
                         <div className="group">
                             <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Email Address</label>
                             <div className="relative">
@@ -65,7 +62,6 @@ const Register = () => {
                             </div>
                         </div>
 
-                        {/* Address */}
                         <div className="group">
                             <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Complete Address</label>
                             <div className="relative">
@@ -81,7 +77,6 @@ const Register = () => {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-8">
-                            {/* Password */}
                             <div className="group">
                                 <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Choose Password</label>
                                 <div className="relative">
@@ -97,7 +92,6 @@ const Register = () => {
                                 </div>
                             </div>
 
-                            {/* Confirm Password */}
                             <div className="group">
                                 <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Confirm Password</label>
                                 <div className="relative">

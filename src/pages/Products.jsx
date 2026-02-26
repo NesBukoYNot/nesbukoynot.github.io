@@ -28,7 +28,6 @@ const Products = () => {
                 </div>
             </header>
 
-            {/* Toolbar: Filter & Search */}
             <div className="bg-white p-6 rounded-[2rem] shadow-xl shadow-gray-100/50 border border-gray-50 mb-12 flex flex-col lg:flex-row gap-8 items-center justify-between">
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 w-full lg:w-auto">
                     {categories.map(cat => (
@@ -61,7 +60,6 @@ const Products = () => {
                 </div>
             </div>
 
-            {/* Stats Bar */}
             <div className="mb-8 flex justify-between items-center px-4">
                 <span className="text-xs font-bold text-gray-400 italic">
                     Showing <span className="text-primary font-black">{filteredProducts.length}</span> sustainable products
@@ -72,7 +70,6 @@ const Products = () => {
                 </div>
             </div>
 
-            {/* Product Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 {filteredProducts.map((product) => (
                     <div key={product.id} className="bg-white rounded-[2rem] p-5 shadow-xl shadow-gray-100/30 border border-gray-50 flex flex-col group hover:shadow-2xl hover:border-primary/10 transition-all duration-500">
