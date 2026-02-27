@@ -1,4 +1,4 @@
-import { Leaf, Mail, MapPin, Phone, Github, Linkedin, Facebook } from 'lucide-react';
+import { Mail, MapPin, Phone, Github, Linkedin, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -8,8 +8,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     <div className="space-y-6">
                         <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/20">
-                                <Leaf size={24} className="text-accent" fill="currentColor" />
+                            <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-black/10">
+                                <img src="/logo.png" alt="Logo" className="w-7 h-7 object-contain" />
                             </div>
                             <span className="text-2xl font-black tracking-tight">NesBuko<span className="text-secondary">YNot</span></span>
                         </div>
