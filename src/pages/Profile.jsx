@@ -9,7 +9,6 @@ const Profile = () => {
             </header>
 
             <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-10">
-                {/* Left Column: User Brief */}
                 <div className="lg:col-span-1">
                     <div className="bg-white rounded-[2.5rem] p-8 shadow-2xl shadow-gray-200/50 border border-gray-50 text-center sticky top-28">
                         <div className="relative w-32 h-32 mx-auto mb-6">
@@ -41,9 +40,7 @@ const Profile = () => {
                     </div>
                 </div>
 
-                {/* Right Column: Details & Settings */}
                 <div className="lg:col-span-2 space-y-8">
-                    {/* Personal Information */}
                     <section className="bg-white rounded-[2.5rem] p-10 shadow-xl shadow-gray-100/50 border border-gray-50">
                         <div className="flex items-center justify-between mb-8">
                             <h3 className="text-xl font-black text-gray-800 flex items-center gap-3">
@@ -75,7 +72,6 @@ const Profile = () => {
                         </div>
                     </section>
 
-                    {/* Account Settings Grid */}
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="bg-white rounded-[2.2rem] p-8 shadow-lg shadow-gray-100/30 border border-gray-50 group hover:border-primary/20 transition-all cursor-pointer">
                             <div className="w-12 h-12 bg-primary/5 text-primary rounded-xl flex items-center justify-center mb-6 border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all">
