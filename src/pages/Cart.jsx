@@ -13,7 +13,7 @@ const Cart = () => {
     const total = subtotal + shipping;
 
     return (
-        <div className="page-container py-8">
+        <div className="page-container py-12 min-h-screen flex flex-col">
             <header className="page-header flex items-center justify-center gap-3">
                 <ShoppingBag size={32} />
                 <h1>Your Cart</h1>

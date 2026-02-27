@@ -5,7 +5,7 @@ const About = () => {
         {
             name: "Vince Gio Acedillo",
             role: "Team Leader",
-            bio: "Collaborated on the overall project vision, site layout, and core component integration.",
+            bio: "Collaborated with the team to develop and integrate various project components, ensuring a cohesive and functional final result.",
             image: "/Vince Acedillo.png",
             github: "#",
             linkedin: "#"
@@ -13,7 +13,7 @@ const About = () => {
         {
             name: "Jandrei Labarento",
             role: "Team Member",
-            bio: "Contributed to the visual design, branding elements, user interface styling and programming also.",
+            bio: "Contributed to the design and implementation of the project alongside the team, working together to achieve our project goals.",
             image: "/Jandrei Labarento.png",
             github: "#",
             linkedin: "#"
@@ -21,7 +21,7 @@ const About = () => {
         {
             name: "Stephen Dave Blanza",
             role: "Team Member",
-            bio: "Assisted in content management, product research, quality assurance testing and programming also.",
+            bio: "Worked together with the team on the overall development of the project, focusing on creating a seamless and user-friendly experience.",
             image: "/Dave Blanza.png",
             github: "#",
             linkedin: "#"
@@ -29,7 +29,7 @@ const About = () => {
     ];
 
     return (
-        <div className="page-container py-12">
+        <div className="page-container py-12 min-h-screen flex flex-col">
             <header className="page-header mb-16 text-center">
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 text-primary rounded-[2rem] mb-6 shadow-xl shadow-primary/5">
                     <User size={36} />

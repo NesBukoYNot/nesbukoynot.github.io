@@ -6,7 +6,7 @@ const Storefront = () => {
     const featured = products.filter(p => ["Best Seller", "New", "Trending"].includes(p.tag));
 
     return (
-        <div className="page-container py-12">
+        <div className="page-container py-12 min-h-screen flex flex-col">
             <header className="page-header relative overflow-hidden p-16 rounded-[2.5rem] bg-gradient-to-br from-primary to-primary-hover text-white mb-20 shadow-2xl">
                 <div className="relative z-10 max-w-2xl">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-accent text-[10px] font-bold mb-6 backdrop-blur-md uppercase tracking-widest">

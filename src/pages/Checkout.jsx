@@ -24,7 +24,7 @@ const Checkout = () => {
     }
 
     return (
-        <div className="page-container py-8">
+        <div className="page-container py-12 min-h-screen flex flex-col">
             <header className="page-header mb-12">
                 <h1>Complete Your Order</h1>
                 <p>Select your preferred receiving and payment methods.</p>

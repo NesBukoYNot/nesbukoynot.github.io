@@ -15,7 +15,7 @@ const Products = () => {
     });
 
     return (
-        <div className="page-container py-12">
+        <div className="page-container pt-12 pb-24 min-h-screen flex flex-col justify-start">
             <header className="page-header mb-16 text-left border-b border-gray-100 pb-12">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
                     <div>
