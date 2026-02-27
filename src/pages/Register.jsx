@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Register = () => {
     return (
-        <div className="page-container py-16">
+        <div className="page-container py-16 min-h-screen flex flex-col items-center justify-center">
             <div className="max-w-3xl mx-auto">
                 <header className="page-header text-center mb-12">
                     <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 text-primary rounded-[2rem] mb-6 shadow-xl shadow-primary/5">
