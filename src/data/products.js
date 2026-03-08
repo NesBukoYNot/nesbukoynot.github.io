@@ -15,7 +15,7 @@ export const products = [
         category: "Construction",
         tag: "New",
         description: "Heavy-duty coir mesh for soil erosion control and stabilization in construction sites.",
-        image: "https://images.unsplash.com/photo-1541888941294-1147a7596c56?auto=format&fit=crop&q=80&w=800"
+        image: "/Coco net.jpg"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const products = [
         category: "Home Decor",
         tag: "Trending",
         description: "Durable, high-friction doormat made from raw coconut fiber. Naturally anti-bacterial.",
-        image: "https://images.unsplash.com/photo-1589363360147-44093959fe23?auto=format&fit=crop&q=80&w=800"
+        image: "/Coconut coir fiber mat.jpg"
     },
     {
         id: 4,
@@ -42,7 +42,7 @@ export const products = [
         category: "Gardening",
         tag: "Essential",
         description: "High-quality coco peat blocks. Excellent water retention for hydroponics and potting mix.",
-        image: "https://images.unsplash.com/photo-1598971861713-54ad16a7e72e?auto=format&fit=crop&q=80&w=800"
+        image: "/Coco coir block.jpg"
     },
     {
         id: 6,
@@ -51,6 +51,6 @@ export const products = [
         category: "Gardening",
         tag: "Best Seller",
         description: "Pre-formed liners for hanging baskets. Eco-friendly alternative to plastic.",
-        image: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&q=80&w=800"
+        image: "/Coco coir rope.webp"
     }
 ];
