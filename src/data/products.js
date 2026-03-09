@@ -6,7 +6,7 @@ export const products = [
         category: "Gardening",
         tag: "Best Seller",
         description: "Biodegradable pots made from compressed coconut fiber. Ideal for root development.",
-        image: "https://images.unsplash.com/photo-1599591451790-258079603348?auto=format&fit=crop&q=80&w=800"
+        image: "/Coco Pots.jpg"
     },
     {
         id: 2,
@@ -33,7 +33,7 @@ export const products = [
         category: "Kitchen",
         tag: "Eco-Special",
         description: "Multipurpose cleaning brush with sturdy coir bristles. Plastic-free and compostable.",
-        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800"
+        image: "/Coconut Fiber Brush.jpg"
     },
     {
         id: 5,
