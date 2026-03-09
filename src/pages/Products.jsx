@@ -77,7 +77,8 @@ const Products = () => {
                             <img
                                 src={product.image}
                                 alt={product.name}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${product.id === 4 ? 'object-[center_15%]' : ''
+                                    }`}
                             />
                             {product.tag && (
                                 <span className="absolute top-4 left-4 px-3 py-1 rounded-lg bg-white/90 backdrop-blur-md text-[9px] font-black text-primary uppercase tracking-widest shadow-lg">
