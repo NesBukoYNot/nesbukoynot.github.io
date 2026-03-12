@@ -1,3 +1,4 @@
+// HashRouter is used for GitHub Pages compatibility to prevent 404 errors on page refreshes
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';

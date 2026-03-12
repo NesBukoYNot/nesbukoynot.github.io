@@ -74,6 +74,7 @@ const TransactionHistory = () => {
             </div>
 
             <div className="mt-12 text-center text-sm text-gray-400 font-light italic">
+                {/* Visual indicator that this data is for demonstration and not a real backend integration */}
                 * All transactions are placeholders for educational purposes only.
             </div>
         </div>

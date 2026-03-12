@@ -6,6 +6,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
 
+    // Inject the brand logo as the site favicon dynamically on mount
     useEffect(() => {
         const links = document.querySelectorAll("link[rel*='icon']");
         if (links.length > 0) {
@@ -31,6 +32,7 @@ const Navbar = () => {
         { path: '/about', label: 'About', icon: <Info size={18} /> },
     ];
 
+    // Helper function to detect if the current route matches the link path
     const isActive = (path) => location.pathname === path;
 
     return (

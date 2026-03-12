@@ -5,8 +5,10 @@ import { Search, Filter, ShoppingCart, Info, LayoutGrid, List } from 'lucide-rea
 const Products = () => {
     const [filter, setFilter] = useState('All');
     const [searchQuery, setSearchQuery] = useState('');
+    // Dynamically extract unique categories from the products data to build filter buttons
     const categories = ['All', ...new Set(products.map(p => p.category))];
 
+    // Memoize or compute filtered results based on both category selection and search query
     const filteredProducts = products.filter(product => {
         const matchesCategory = filter === 'All' || product.category === filter;
         const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -77,8 +79,10 @@ const Products = () => {
                             <img
                                 src={product.image}
                                 alt={product.name}
-                                className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${product.id === 4 ? 'object-[center_15%]' : ''
-                                    }`}
+                                className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${
+                                    // Custom vertical alignment for the Brush image (ID 4) to ensure the head is well-framed
+                                    product.id === 4 ? 'object-[center_15%]' : ''
+                                }`}
                             />
                             {product.tag && (
                                 <span className="absolute top-4 left-4 px-3 py-1 rounded-lg bg-white/90 backdrop-blur-md text-[9px] font-black text-primary uppercase tracking-widest shadow-lg">

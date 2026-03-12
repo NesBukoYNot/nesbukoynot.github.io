@@ -72,6 +72,7 @@ const Footer = () => {
                 </div>
 
                 <div className="pt-8 border-t border-white/10 text-center">
+                    {/* Legal/Educational Disclaimer: Required for academic project compliance */}
                     <p className="text-accent/60 italic text-sm mb-4 max-w-2xl mx-auto">
                         "For educational purposes only, and no copyright infringement is intended."
                     </p>

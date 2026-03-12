@@ -102,6 +102,7 @@ const Home = () => {
                         "We believe that the best solutions are already created by nature. Our role is simply to innovate their application for a cleaner tomorrow."
                     </p>
 
+                    {/* Project Metadata Section: Displays technical and academic context */}
                     <div className="pt-10 border-t border-primary/10 flex flex-wrap justify-center gap-10 md:gap-20">
                         <div className="flex flex-col items-center gap-2">
                             <span className="text-[10px] uppercase tracking-[0.3em] font-black text-primary/40">University Partner</span>

@@ -10,6 +10,7 @@ const Profile = () => {
 
             <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-10">
                 <div className="lg:col-span-1">
+                    {/* Sticky Sidebar: Keeps the user summary visible while scrolling through settings */}
                     <div className="bg-white rounded-[2.5rem] p-8 shadow-2xl shadow-gray-200/50 border border-gray-50 text-center sticky top-28">
                         <div className="relative w-32 h-32 mx-auto mb-6">
                             <div className="w-full h-full rounded-[2.5rem] bg-primary flex items-center justify-center text-accent text-4xl font-black shadow-xl shadow-primary/20">
