@@ -4,35 +4,35 @@
 
 @layer base {
   :root {
-    --primary: #2d5a28;
-    --primary-hover: #1e3d1a;
-    --secondary: #8b5a2b;
-    --accent: #f4ebd0;
+    --primary: #243027;        /* Professional dark forest */
+    --primary-hover: #1b251e;
+    --secondary: #4a5c4e;      /* Muted sage */
+    --accent: #f8f9fa;         /* Light neutral */
   }
   
   body {
-    @apply bg-[#fafaf8] text-[#1a1a1a] font-outfit antialiased selection:bg-primary/10 selection:text-primary;
+    @apply bg-[#fcfcfc] text-[#1a1a1a] font-outfit antialiased;
   }
 }
 
 @layer components {
   .page-container {
-    @apply w-full;
+    @apply w-full max-w-7xl mx-auto px-6;
   }
 
   .main-content {
-    @apply flex-1 max-w-7xl mx-auto w-full px-5 pt-28 pb-12 min-h-[70vh];
+    @apply flex-1 w-full pt-28 pb-12 min-h-[70vh];
   }
 
   .card {
-    @apply bg-white rounded-3xl p-8 shadow-xl shadow-gray-200/40 border border-gray-100;
+    @apply bg-white rounded-2xl p-8 border border-gray-200 shadow-sm transition-all;
   }
 
   .btn-primary {
-    @apply flex items-center justify-center gap-2 bg-primary text-white font-bold px-6 py-4 rounded-2xl transition-all hover:bg-primary-hover hover:shadow-xl hover:shadow-primary/20 active:scale-95 w-full;
+    @apply flex items-center justify-center gap-2 bg-primary text-white font-semibold px-6 py-3.5 rounded-xl transition-all hover:bg-primary-hover active:bg-primary w-full;
   }
 
   .btn-secondary {
-    @apply flex items-center justify-center gap-2 bg-secondary text-white font-bold px-6 py-4 rounded-2xl transition-all hover:bg-secondary-hover hover:shadow-xl hover:shadow-secondary/20 active:scale-95 w-full;
+    @apply flex items-center justify-center gap-2 bg-white text-primary border border-gray-200 font-semibold px-6 py-3.5 rounded-xl transition-all hover:bg-gray-50 active:bg-white w-full;
   }
 }
