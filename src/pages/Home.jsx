@@ -3,36 +3,60 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div className="page-container">
-            <section className="relative overflow-hidden rounded-[2rem] bg-primary text-white px-6 py-16 md:p-16 mb-12 md:mb-20 shadow-2xl min-h-[500px] flex items-center">
-                <div className="relative z-10 max-w-3xl text-left">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-accent text-xs font-bold mb-8 backdrop-blur-md border border-white/10 uppercase tracking-[0.2em]">
+        <div className="pt-8 max-w-7xl mx-auto px-6">
+            <section className="py-12 md:py-24 mb-12 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+                {/* Left Side: Editorial Typography */}
+                <div className="flex-1 text-left space-y-8">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary text-[10px] font-bold border border-primary/10 uppercase tracking-widest">
                         <Recycle size={14} /> Eco-Conscious Innovation
                     </div>
-                    <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight">
-                        Revolutionizing <span className="text-accent italic">Nature</span> with Coconut Coir
+                    <h1 className="text-5xl md:text-8xl font-black text-gray-900 leading-[0.95] tracking-tighter">
+                        PURE <br />
+                        <span className="text-secondary opacity-80">COIR.</span>
                     </h1>
-                    <p className="text-base md:text-lg opacity-80 mb-10 leading-relaxed font-light max-w-2xl">
-                        Discover the limitless potential of coconut husk fiber. We transform recycled organic waste into premium eco-friendly solutions for sustainable living and industry.
+                    <p className="text-xl text-gray-500 leading-relaxed max-w-lg font-light">
+                        Transforming coconut organic waste into premium eco-friendly solutions for the modern world.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-                        <Link to="/products" className="group flex items-center justify-center gap-3 bg-accent text-primary px-8 py-4 md:px-10 md:py-5 rounded-2xl font-black text-lg transition-all hover:scale-105 hover:bg-white active:scale-95 shadow-xl shadow-black/20">
-                            Explore Catalog <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                        <Link to="/products" className="flex items-center justify-center gap-2 bg-primary text-white px-10 py-5 rounded-lg font-bold transition-all hover:bg-primary-dark">
+                            Explore Catalog <ArrowRight size={20} />
                         </Link>
-                        <Link to="/storefront" className="flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 border border-white/20 backdrop-blur-sm px-8 py-4 md:px-10 md:py-5 rounded-2xl font-bold transition-all active:scale-95">
-                            Featured Products
+                        <Link to="/about" className="flex items-center justify-center gap-2 border border-gray-200 px-10 py-5 rounded-lg font-bold text-gray-500 hover:bg-gray-50">
+                            Our Story
                         </Link>
                     </div>
                 </div>
 
-                <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
-                <div className="absolute bottom-[-20%] left-[-5%] w-[300px] h-[300px] bg-secondary/20 rounded-full blur-[80px] pointer-events-none"></div>
-
-                <div className="absolute right-0 bottom-0 top-0 w-1/2 opacity-10 pointer-events-none hidden lg:block">
-                    <svg viewBox="0 0 500 500" className="w-full h-full stroke-white fill-none stroke-[0.5]">
-                        <path d="M500,500 C400,450 350,300 450,150 C550,0 300,50 150,100 C0,150 50,400 500,500" />
-                        <path d="M500,0 C400,50 350,200 450,350 C550,500 300,450 150,400 C0,350 50,100 500,0" />
-                    </svg>
+                {/* Right Side: Bento Benefits Grid (No Image) */}
+                <div className="flex-1 w-full grid grid-cols-2 gap-4">
+                    <div className="bg-gray-50 p-8 rounded-3xl space-y-4 border border-gray-100 flex flex-col justify-center min-h-[200px]">
+                        <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm text-primary">
+                            <Leaf size={24} />
+                        </div>
+                        <h3 className="font-bold text-gray-900 leading-tight">100% Organic Material</h3>
+                        <p className="text-xs text-gray-400 font-medium">Naturally sourced and processed.</p>
+                    </div>
+                    <div className="bg-primary p-8 rounded-3xl space-y-4 text-white flex flex-col justify-center min-h-[200px]">
+                        <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white">
+                            <ShieldCheck size={24} />
+                        </div>
+                        <h3 className="font-bold leading-tight">Industrial Grade Strength</h3>
+                        <p className="text-xs text-white/50 font-medium">Built to withstand the elements.</p>
+                    </div>
+                    <div className="bg-secondary p-8 rounded-3xl space-y-4 text-white flex flex-col justify-center min-h-[200px]">
+                        <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-white">
+                            <Globe size={24} />
+                        </div>
+                        <h3 className="font-bold leading-tight">Global Export Ready</h3>
+                        <p className="text-xs text-white/50 font-medium">Standardized for every market.</p>
+                    </div>
+                    <div className="bg-gray-50 p-8 rounded-3xl space-y-4 border border-gray-100 flex flex-col justify-center min-h-[200px]">
+                        <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm text-secondary">
+                            <Recycle size={24} />
+                        </div>
+                        <h3 className="font-bold text-gray-900 leading-tight">Zero Waste Circularity</h3>
+                        <p className="text-xs text-gray-400 font-medium">Closing the loop on production.</p>
+                    </div>
                 </div>
             </section>
 
@@ -43,84 +67,79 @@ const Home = () => {
                     { label: "Products", val: "25+", icon: <Zap className="text-amber-500" /> },
                     { label: "Happy Clients", val: "2.4k", icon: <Heart className="text-red-500" /> },
                 ].map((stat, i) => (
-                    <div key={i} className="card p-6 flex flex-col items-center text-center gap-3 border-none shadow-xl shadow-gray-100/50 bg-gradient-to-b from-white to-gray-50/50">
-                        <div className="w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center mb-2">
+                    <div key={i} className="bg-white border border-gray-100 p-8 rounded-2xl flex flex-col items-center text-center gap-2">
+                        <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center mb-2">
                             {stat.icon}
                         </div>
-                        <div className="text-2xl font-black text-gray-800">{stat.val}</div>
-                        <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">{stat.label}</div>
+                        <div className="text-xl font-bold text-gray-900">{stat.val}</div>
+                        <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{stat.label}</div>
                     </div>
                 ))}
             </section>
 
             <section className="mb-24">
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <h2 className="text-4xl font-black text-primary mb-6 tracking-tight">The Power of Natural Fiber</h2>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-4">The Power of Natural Fiber</h2>
                     <p className="text-gray-500 font-light leading-relaxed">
                         Coconut coir isn't just waste—it's one of the strongest and most versatile natural fibers on Earth. Discover why it's the future of eco-friendly materials.
                     </p>
-                    <div className="w-16 h-1.5 bg-secondary mx-auto mt-8 rounded-full"></div>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-10">
-                    <div className="group bg-white p-10 rounded-[2.5rem] shadow-xl shadow-gray-100/50 border border-gray-100 hover:border-primary/20 transition-all hover:shadow-2xl hover:-translate-y-2">
-                        <div className="w-16 h-16 bg-green-100 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <Leaf size={32} />
+                <div className="grid md:grid-cols-3 gap-8">
+                    <div className="bg-white p-10 rounded-2xl border border-gray-100">
+                        <div className="w-12 h-12 bg-gray-50 text-primary rounded-xl flex items-center justify-center mb-6">
+                            <Leaf size={24} />
                         </div>
-                        <h3 className="text-2xl font-black mb-4 text-gray-800">100% Organic</h3>
-                        <p className="text-gray-500 font-light leading-relaxed">
+                        <h3 className="text-xl font-bold mb-3 text-gray-900">100% Organic</h3>
+                        <p className="text-gray-500 text-sm font-light leading-relaxed">
                             Fully biodegradable and sustainably sourced. Our process returns nutrients back to the earth instead of adding to landfills.
                         </p>
                     </div>
 
-                    <div className="group bg-white p-10 rounded-[2.5rem] shadow-xl shadow-gray-100/50 border border-gray-100 hover:border-secondary/20 transition-all hover:shadow-2xl hover:-translate-y-2">
-                        <div className="w-16 h-16 bg-amber-100 text-secondary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-secondary group-hover:text-white transition-colors">
-                            <ShieldCheck size={32} />
+                    <div className="bg-white p-10 rounded-2xl border border-gray-100">
+                        <div className="w-12 h-12 bg-gray-50 text-secondary rounded-xl flex items-center justify-center mb-6">
+                            <ShieldCheck size={24} />
                         </div>
-                        <h3 className="text-2xl font-black mb-4 text-gray-800">Durable Strength</h3>
-                        <p className="text-gray-500 font-light leading-relaxed">
+                        <h3 className="text-xl font-bold mb-3 text-gray-900">Durable Strength</h3>
+                        <p className="text-gray-500 text-sm font-light leading-relaxed">
                             Naturally resistant to water, rot, and fungi. Coir fibers can withstand years of harsh outdoor exposure without degradation.
                         </p>
                     </div>
 
-                    <div className="group bg-white p-10 rounded-[2.5rem] shadow-xl shadow-gray-100/50 border border-gray-100 hover:border-blue-200 transition-all hover:shadow-2xl hover:-translate-y-2">
-                        <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <Globe size={32} />
+                    <div className="bg-white p-10 rounded-2xl border border-gray-100">
+                        <div className="w-12 h-12 bg-gray-50 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                            <Globe size={24} />
                         </div>
-                        <h3 className="text-2xl font-black mb-4 text-gray-800">Global Use</h3>
-                        <p className="text-gray-500 font-light leading-relaxed">
+                        <h3 className="text-xl font-bold mb-3 text-gray-900">Global Use</h3>
+                        <p className="text-gray-500 text-sm font-light leading-relaxed">
                             From large-scale construction geotextiles to interior home decor, we provide solutions that scale for every environmental need.
                         </p>
                     </div>
                 </div>
             </section>
 
-            <section className="bg-accent/30 rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden">
-                <div className="relative z-10 max-w-4xl mx-auto">
-                    <h2 className="text-4xl font-black text-primary mb-8 tracking-tight">Built for Excellence & Sustainability</h2>
-                    <p className="text-lg text-secondary font-medium mb-12 italic leading-relaxed">
+            <section className="bg-gray-50 rounded-2xl p-12 md:p-16 text-center border border-gray-100">
+                <div className="max-w-3xl mx-auto">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-6">Built for Excellence & Sustainability</h2>
+                    <p className="text-lg text-gray-500 font-light mb-10 italic leading-relaxed">
                         "We believe that the best solutions are already created by nature. Our role is simply to innovate their application for a cleaner tomorrow."
                     </p>
 
                     {/* Project Metadata Section: Displays technical and academic context */}
-                    <div className="pt-10 border-t border-primary/10 flex flex-wrap justify-center gap-10 md:gap-20">
-                        <div className="flex flex-col items-center gap-2">
-                            <span className="text-[10px] uppercase tracking-[0.3em] font-black text-primary/40">University Partner</span>
-                            <div className="text-xl font-black text-primary/80">FEU TECH</div>
+                    <div className="pt-10 border-t border-gray-200 flex flex-wrap justify-center gap-10 md:gap-16">
+                        <div className="flex flex-col items-center gap-1">
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">University Partner</span>
+                            <div className="text-sm font-bold text-gray-600">FEU TECH</div>
                         </div>
-                        <div className="flex flex-col items-center gap-2">
-                            <span className="text-[10px] uppercase tracking-[0.3em] font-black text-primary/40">Technology Stack</span>
-                            <div className="text-xl font-black text-primary/80">VITE + REACT</div>
+                        <div className="flex flex-col items-center gap-1">
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">Technology Stack</span>
+                            <div className="text-sm font-bold text-gray-600">VITE + REACT</div>
                         </div>
-                        <div className="flex flex-col items-center gap-2">
-                            <span className="text-[10px] uppercase tracking-[0.3em] font-black text-primary/40">Design System</span>
-                            <div className="text-xl font-black text-primary/80">TAILWIND CSS</div>
+                        <div className="flex flex-col items-center gap-1">
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-gray-400">Design System</span>
+                            <div className="text-sm font-bold text-gray-600">TAILWIND CSS</div>
                         </div>
                     </div>
-                </div>
-
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15vw] font-black text-black/[0.02] whitespace-nowrap pointer-events-none select-none">
-                    NESBUKOYNOT 2026
                 </div>
             </section>
         </div>
