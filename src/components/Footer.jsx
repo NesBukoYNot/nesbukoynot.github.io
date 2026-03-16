@@ -6,51 +6,42 @@ const Footer = () => {
         <footer className="bg-primary text-white pt-20 pb-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                    <div className="space-y-6">
-                        <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-black/10">
-                                <img src="/logo.png" alt="Logo" className="w-7 h-7 object-contain" />
-                            </div>
-                            <span className="text-2xl font-black tracking-tight">NesBuko<span className="text-secondary">YNot</span></span>
+                    <div className="space-y-4">
+                        <div className="flex items-center gap-2">
+                            <img src="/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
+                            <span className="text-xl font-bold tracking-tight text-white">NesBuko<span className="text-secondary">YNot</span></span>
                         </div>
-                        <p className="text-white/70 font-light leading-relaxed">
-                            Pioneering sustainable solutions through high-quality coconut coir products. Transforming agricultural waste into eco-friendly wonders for gardening, construction, and lifestyle.
+                        <p className="text-white/50 text-xs font-light leading-relaxed max-w-xs">
+                            Pioneering sustainable solutions through high-quality coconut coir products. Transforming agricultural waste into eco-friendly wonders.
                         </p>
-                        <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10">
-                                <Facebook size={18} />
+                        <div className="flex gap-2">
+                            <a href="#" className="w-8 h-8 bg-white/5 rounded flex items-center justify-center hover:bg-white/10 transition-colors border border-white/10">
+                                <Facebook size={14} />
                             </a>
-                            <a href="#" className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10">
-                                <Github size={18} />
-                            </a>
-                            <a href="#" className="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors border border-white/10">
-                                <Linkedin size={18} />
+                            <a href="#" className="w-8 h-8 bg-white/5 rounded flex items-center justify-center hover:bg-white/10 transition-colors border border-white/10">
+                                <Github size={14} />
                             </a>
                         </div>
                     </div>
 
                     <div>
-                        <h4 className="text-lg font-bold mb-8 text-accent">Shop Catalog</h4>
-                        <ul className="space-y-4 text-white/70">
-                            <li><Link to="/products" className="hover:text-white transition-colors">All Products</Link></li>
-                            <li><Link to="/storefront" className="hover:text-white transition-colors">Featured Items</Link></li>
-                            <li><Link to="/cart" className="hover:text-white transition-colors">Shopping Cart</Link></li>
-                            <li><Link to="/history" className="hover:text-white transition-colors">Order History</Link></li>
+                        <h4 className="text-sm font-bold mb-6 text-secondary uppercase tracking-widest">Shop</h4>
+                        <ul className="space-y-3 text-xs text-white/50">
+                            <li><Link to="/products" className="hover:text-white transition-colors">Products</Link></li>
+                            <li><Link to="/storefront" className="hover:text-white transition-colors">Featured</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="text-lg font-bold mb-8 text-accent">My Account</h4>
-                        <ul className="space-y-4 text-white/70">
-                            <li><Link to="/profile" className="hover:text-white transition-colors">Profile Details</Link></li>
-                            <li><Link to="/login" className="hover:text-white transition-colors">Member Login</Link></li>
-                            <li><Link to="/register" className="hover:text-white transition-colors">Join Community</Link></li>
-                            <li><Link to="/about" className="hover:text-white transition-colors">About Team</Link></li>
+                        <h4 className="text-sm font-bold mb-6 text-secondary uppercase tracking-widest">Account</h4>
+                        <ul className="space-y-3 text-xs text-white/50">
+                            <li><Link to="/profile" className="hover:text-white transition-colors">Profile</Link></li>
+                            <li><Link to="/login" className="hover:text-white transition-colors">Login</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="text-lg font-bold mb-8 text-accent">Get In Touch</h4>
+                        <h4 className="text-sm font-bold mb-6 text-secondary uppercase tracking-widest">Contact</h4>
                         <ul className="space-y-6 text-white/70">
                             <li className="flex items-start gap-3">
                                 <MapPin size={20} className="text-accent flex-shrink-0" />
@@ -71,15 +62,12 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-white/10 text-center">
-                    {/* Legal/Educational Disclaimer: Required for academic project compliance */}
-                    <p className="text-accent/60 italic text-sm mb-4 max-w-2xl mx-auto">
-                        "For educational purposes only, and no copyright infringement is intended."
-                    </p>
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-white/40 text-xs tracking-widest uppercase font-bold">
-                        <span>FEU TECH ADVANCED WEB DESIGN</span>
-                        <span>© {new Date().getFullYear()} NesBukoYNot Group. All rights reserved.</span>
-                        <span>FINALS PROJECT</span>
+                <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div className="text-[10px] text-white/20 uppercase tracking-[0.2em]">
+                        FEN TECH ADVANCED WEB DESIGN • FINALS PROJECT
+                    </div>
+                    <div className="text-[10px] text-white/20 uppercase tracking-[0.2em]">
+                        © {new Date().getFullYear()} NesBukoYNot Group
                     </div>
                 </div>
             </div>

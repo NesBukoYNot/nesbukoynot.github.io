@@ -36,12 +36,12 @@ const Navbar = () => {
     const isActive = (path) => location.pathname === path;
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-20">
                     <Link to="/" className="flex items-center gap-2 group">
-                        <img src="/logo.png" alt="Logo" width="40" height="40" className="w-10 h-10 object-contain" fetchPriority="high" decoding="sync" loading="eager" />
-                        <span className="text-2xl font-black text-primary tracking-tight">NesBuko<span className="text-secondary">YNot</span></span>
+                        <img src="/logo.png" alt="Logo" width="32" height="32" className="w-8 h-8 object-contain" fetchPriority="high" decoding="sync" loading="eager" />
+                        <span className="text-xl font-bold text-gray-900 tracking-tight">NesBuko<span className="text-secondary">YNot</span></span>
                     </Link>
 
                     <div className="hidden lg:flex items-center gap-1">
@@ -49,28 +49,26 @@ const Navbar = () => {
                             <Link
                                 key={link.path}
                                 to={link.path}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all ${isActive(link.path)
-                                    ? 'bg-primary/10 text-primary'
-                                    : 'text-gray-500 hover:bg-gray-50 hover:text-primary'
+                                className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all ${isActive(link.path)
+                                    ? 'bg-gray-100 text-gray-900'
+                                    : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                                     }`}
                             >
                                 {link.icon}
                                 {link.label}
                             </Link>
                         ))}
-                        <div className="ml-4 pl-4 border-l border-gray-100 flex items-center gap-3">
+                        <div className="ml-2 pl-4 border-l border-gray-100 flex items-center gap-2">
                             <Link 
                                 to="/login" 
-                                className="flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-gray-500 hover:bg-gray-50 hover:text-primary transition-all"
+                                className="px-4 py-2 rounded-md font-medium text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-all"
                             >
-                                <LogIn size={18} />
                                 Log In
                             </Link>
                             <Link
                                 to="/register"
-                                className="flex items-center gap-2 bg-primary text-white px-6 py-2.5 rounded-xl font-bold transition-all hover:bg-primary-hover hover:shadow-lg hover:shadow-primary/20 active:scale-95"
+                                className="bg-primary text-white px-5 py-2 rounded-md font-medium text-sm transition-all hover:bg-primary-dark"
                             >
-                                <User size={18} />
                                 Register
                             </Link>
                         </div>
@@ -95,8 +93,8 @@ const Navbar = () => {
                             key={link.path}
                             to={link.path}
                             onClick={() => setIsOpen(false)}
-                            className={`flex items-center gap-4 px-4 py-4 rounded-2xl text-base font-bold transition-all ${isActive(link.path)
-                                ? 'bg-primary text-white shadow-lg shadow-primary/20'
+                            className={`flex items-center gap-4 px-4 py-3 rounded-xl text-sm font-semibold transition-all ${isActive(link.path)
+                                ? 'bg-gray-100 text-gray-900'
                                 : 'text-gray-600 hover:bg-gray-50'
                                 }`}
                         >
@@ -104,21 +102,19 @@ const Navbar = () => {
                             {link.label}
                         </Link>
                     ))}
-                    <div className="pt-4 border-t border-gray-100 space-y-3">
+                    <div className="pt-4 border-t border-gray-100 grid grid-cols-2 gap-3">
                         <Link
                             to="/login"
                             onClick={() => setIsOpen(false)}
-                            className="flex items-center justify-center gap-3 w-full bg-gray-50 text-gray-600 py-4 rounded-2xl font-bold hover:bg-gray-100"
+                            className="flex items-center justify-center py-3 rounded-lg text-sm font-bold bg-gray-50 text-gray-600"
                         >
-                            <LogIn size={20} />
                             Log In
                         </Link>
                         <Link
                             to="/register"
                             onClick={() => setIsOpen(false)}
-                            className="flex items-center justify-center gap-3 w-full bg-primary text-white py-4 rounded-2xl font-bold shadow-lg shadow-primary/20"
+                            className="flex items-center justify-center py-3 rounded-lg text-sm font-bold bg-primary text-white"
                         >
-                            <User size={20} />
                             Register
                         </Link>
                     </div>
