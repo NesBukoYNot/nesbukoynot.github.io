@@ -23,8 +23,8 @@ const About = () => {
             role: "Team Member",
             bio: "Worked together with the team on the overall development of the project.",
             image: "/Dave Blanza.png",
-            github: "#",
-            facebook: "#"
+            github: "https://github.com/Davidavidave",
+            facebook: "https://www.facebook.com/stephendavealvarez.blanza"
         }
     ];
 
