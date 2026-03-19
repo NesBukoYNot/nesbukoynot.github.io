@@ -14,14 +14,6 @@ const Footer = () => {
                         <p className="text-white/50 text-xs font-light leading-relaxed max-w-xs">
                             Pioneering sustainable solutions through high-quality coconut coir products. Transforming agricultural waste into eco-friendly wonders.
                         </p>
-                        <div className="flex gap-2">
-                            <a href="#" className="w-8 h-8 bg-white/5 rounded flex items-center justify-center hover:bg-white/10 transition-colors border border-white/10">
-                                <Facebook size={14} />
-                            </a>
-                            <a href="#" className="w-8 h-8 bg-white/5 rounded flex items-center justify-center hover:bg-white/10 transition-colors border border-white/10">
-                                <Github size={14} />
-                            </a>
-                        </div>
                     </div>
 
                     <div>
