@@ -7,16 +7,16 @@ const About = () => {
             role: "Team Leader",
             bio: "Collaborated with the team to develop and integrate various project components.",
             image: "/Vince Acedillo.png",
-            github: "#",
-            facebook: "#"
+            github: "https://github.com/binsacedillo",
+            facebook: "https://www.facebook.com/binsAced/"
         },
         {
             name: "Jandrei Labarento",
             role: "Team Member",
             bio: "Contributed to the design and implementation of the project alongside the team.",
             image: "/Jandrei Labarento.png",
-            github: "#",
-            facebook: "#"
+            github: "https://github.com/Jandrei-IT",
+            facebook: "https://www.facebook.com/3Drey?"
         },
         {
             name: "Stephen Dave Blanza",
