@@ -52,5 +52,23 @@ export const products = [
         tag: "Best Seller",
         description: "Pre-formed liners for hanging baskets. Eco-friendly alternative to plastic.",
         image: "/Coco coir rope.webp"
+    },
+    {
+        id: 7,
+        name: "Coconut Coir Seedling Tray",
+        price: 320,
+        category: "Gardening",
+        tag: "New",
+        description: "Biodegradable seedling trays made from compressed coir fiber. Promotes healthy root systems and reduces transplant shock.",
+        image: "/Coco Tray.jpg"
+    },
+    {
+        id: 8,
+        name: "Coir Grow Slabs",
+        price: 650,
+        category: "Gardening",
+        tag: "Essential",
+        description: "High-density coco coir grow slabs for professional hydroponic cultivation. Superior water and nutrient retention.",
+        image: "/Coco coir slabs.jpg"
     }
 ];
