@@ -1,7 +1,16 @@
 import { UserPlus, Mail, Lock, User, MapPin, Smartphone, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you would typically handle registration
+        // Since we are doing it without a backend, we just navigate to login
+        navigate('/login');
+    };
+
     return (
         <div className="page-container py-16 min-h-screen flex flex-col items-center justify-center">
             <div className="max-w-3xl mx-auto">
@@ -14,7 +23,7 @@ const Register = () => {
                 </header>
 
                 <div className="bg-white rounded-[3rem] p-8 md:p-12 shadow-2xl shadow-gray-200/50 border border-gray-50">
-                    <form className="space-y-8">
+                    <form className="space-y-8" onSubmit={handleSubmit}>
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="group">
                                 <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Complete Name</label>

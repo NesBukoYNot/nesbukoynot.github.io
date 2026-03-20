@@ -1,7 +1,16 @@
 import { LogIn, Mail, Lock, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you would typically handle authentication
+        // Since we are doing it without a backend, we just navigate to profile
+        navigate('/profile');
+    };
+
     return (
         <div className="page-container py-16 min-h-screen flex flex-col items-center justify-center">
             <div className="w-full max-w-lg">
@@ -14,7 +23,7 @@ const Login = () => {
                 </header>
 
                 <div className="bg-white rounded-[2.5rem] p-10 md:p-12 shadow-2xl shadow-gray-200/50 border border-gray-50">
-                    <form className="space-y-8">
+                    <form className="space-y-8" onSubmit={handleSubmit}>
                         <div>
                             <label className="text-xs font-black text-gray-400 uppercase tracking-widest block mb-3 ml-1">Email Address</label>
                             <div className="relative group">

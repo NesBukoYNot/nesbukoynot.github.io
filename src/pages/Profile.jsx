@@ -1,6 +1,14 @@
 import { User, Mail, Smartphone, MapPin, Edit3, Settings, Shield, LogOut } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Profile = () => {
+    const navigate = useNavigate();
+
+    const handleSignOut = () => {
+        // Here you would clear user session
+        navigate('/login');
+    };
+
     return (
         <div className="page-container pt-12 pb-32 min-h-screen flex flex-col justify-start">
             <header className="mb-12 text-center md:text-left">
@@ -34,7 +42,10 @@ const Profile = () => {
                             </div>
                         </div>
 
-                        <button className="mt-8 w-full flex items-center justify-center gap-2 bg-gray-50 text-gray-400 py-3 rounded-lg text-[10px] font-bold uppercase tracking-widest hover:bg-red-50 hover:text-red-500 transition-all">
+                        <button 
+                            onClick={handleSignOut}
+                            className="mt-8 w-full flex items-center justify-center gap-2 bg-gray-50 text-gray-400 py-3 rounded-lg text-[10px] font-bold uppercase tracking-widest hover:bg-red-50 hover:text-red-500 transition-all font-sans"
+                        >
                             <LogOut size={14} /> Sign Out
                         </button>
                     </div>

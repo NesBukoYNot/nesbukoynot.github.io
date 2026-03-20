@@ -1,7 +1,9 @@
 import { CreditCard, Truck, Package, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
+    const navigate = useNavigate();
     const [method, setMethod] = useState('delivery');
     const [payment, setPayment] = useState('cod');
     const [isFinished, setIsFinished] = useState(false);
@@ -17,7 +19,7 @@ const Checkout = () => {
                     <p className="text-gray-500 mb-8 font-light leading-relaxed">
                         Thank you for choosing NesBukoYNot. Your order #77123 has been received and is being processed for {method}.
                     </p>
-                    <button onClick={() => window.location.href = '/'} className="btn-primary">Return to Home</button>
+                    <button onClick={() => navigate('/')} className="btn-primary">Return to Home</button>
                 </div>
             </div>
         );
